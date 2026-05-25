@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote
+        name="git-yocto"
+        fetch="https://git.yoctoproject.org" />
+    <remote
+        name="git-openembedded"
+        fetch="https://git.openembedded.org" />
+    <remote
+        name="git-kraj"
+        fetch="https://github.com/kraj" />
+    <remote
+        name="github-textbook"
+        fetch="." />
+    <default
+        revision="main"
+        remote="github-textbook"
+        sync-j="8" />
+
+    <!-- yocto projects -->
+    <project path="poky" name="poky" remote="git-yocto" revision="scarthgap" />
+    <project path="layers/meta-openembedded" name="meta-openembedded" remote="git-openembedded" revision="scarthgap" />
+    <project path="layers/meta-selinux" name="meta-selinux" remote="git-yocto" revision="scarthgap" />
+    <project path="layers/meta-clang" name="meta-clang" remote="git-kraj" revision="scarthgap" />
+    <!-- end yocto projects -->
+
+    <!-- practice projects -->
+    <project path="layers/meta-textbook" name="meta-textbook" revision="main">
+        <linkfile src="envsetup.sh" dest="envsetup.sh" />
+        <linkfile src=".gitignore" dest=".gitignore" />
+        <linkfile src="README.md" dest="README.md" />
+        <linkfile src="settings.json" dest=".vscode/settings.json" />
+    </project>
+    <project path="document" name="document" revision="main" />
+    <!-- end practice projects -->
+</manifest>
