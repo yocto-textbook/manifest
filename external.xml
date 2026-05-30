@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- external projects -->
+    <project path="external/linux" name="linux" revision="main" />
+    <!-- end external projects -->
+</manifest>
