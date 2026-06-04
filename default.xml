@@ -24,7 +24,7 @@
     <project path="layers/meta-clang" name="meta-clang" remote="git-kraj" revision="scarthgap" />
     <!-- end yocto projects -->
 
-    <!-- practice projects -->
+    <!-- textbook projects -->
     <project path="layers/meta-textbook" name="meta-textbook" revision="main">
         <linkfile src="envsetup.sh" dest="envsetup.sh" />
         <linkfile src=".gitignore" dest=".gitignore" />
@@ -32,5 +32,10 @@
         <linkfile src="settings.json" dest=".vscode/settings.json" />
     </project>
     <project path="document" name="document" revision="main" />
-    <!-- end practice projects -->
+    <!-- end textbook projects -->
+
+    <!-- sdk projects -->
+    <project path="external/hello-sdk-application" name="hello-sdk-application" />
+    <project path="external/hello-sdk-module" name="hello-sdk-module" />
+    <!-- end sdk projects -->
 </manifest>
