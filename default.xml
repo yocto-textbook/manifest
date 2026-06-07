@@ -31,7 +31,7 @@
         <linkfile src="README.md" dest="README.md" />
         <linkfile src="settings.json" dest=".vscode/settings.json" />
     </project>
-    <project path="document" name="document" revision="main" />
+    <project path="document" name="document" revision="main-en" />
     <!-- end textbook projects -->
 
     <!-- sdk projects -->
